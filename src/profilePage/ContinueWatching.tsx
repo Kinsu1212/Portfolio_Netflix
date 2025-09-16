@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContinueWatching.css';
-import workPermitImg from '../images/work_permit.png'; // Correct relative path
-import luffy from '../images/luffy.jpeg';
-import barney from '../images/barney.jpg';
 import bean from '../images/bean.jpg';
-import heist from '../images/heist.jpg';
 import contact from '../images/contact.png';
 import read from '../images/snoop.jpg';
 type ProfileType = 'recruiter' | 'developer' | 'stalker' | 'adventure';

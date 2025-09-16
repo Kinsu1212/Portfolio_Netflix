@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaLinux, FaGitAlt, FaGoogle, FaJava, FaJs } from 'react-icons/fa';
-import { SiRubyonrails, SiMongodb, SiTypescript, SiCocoapods, SiApachekafka, SiRedis, SiOpenai, SiApachecassandra, SiPostgresql, SiMicrosoftazure, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiGithubactions,  SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage, SiSwift, SiBootstrap, SiApple} from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaLinux, FaGoogle, FaJava, FaJs } from 'react-icons/fa';
+import { SiRubyonrails, SiMongodb, SiTypescript, SiCocoapods, SiApachekafka, SiRedis, SiOpenai, SiApachecassandra, SiPostgresql, SiMicrosoftazure, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiGithubactions,  SiHeroku, SiHtml5, SiRabbitmq, SiImessage, SiSwift, SiBootstrap, SiApple} from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {

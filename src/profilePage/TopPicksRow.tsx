@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TopPicksRow.css';
-import { FaPassport, FaCode, FaBriefcase, FaCertificate, FaHandsHelping, FaProjectDiagram, FaEnvelope, FaMusic, FaBook } from 'react-icons/fa';
+import { FaPassport, FaCode, FaBriefcase, FaCertificate, FaProjectDiagram, FaEnvelope, FaBook } from 'react-icons/fa';
 import workPermitImg from '../images/work_permit.png'; // Correct relative path
 import luffy from '../images/luffy.jpeg';
 import barney from '../images/barney.jpg';
