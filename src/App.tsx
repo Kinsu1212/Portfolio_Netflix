@@ -15,6 +15,10 @@ import Reading from './pages/Reading';
 import Blogs from './pages/Blogs';
 import Certifications from './pages/Certifications';
 
+console.log("API URL:", process.env.REACT_APP_DATOCMS_API_URL);
+console.log("API TOKEN:", process.env.REACT_APP_DATOCMS_API_TOKEN);
+
+
 const App: React.FC = () => {
   return (
     <Routes>

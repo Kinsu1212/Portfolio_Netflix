@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Import icons
 import './Navbar.css';
-import netflixLogo from '../images/logo-2.png';
-import blueImage from '../images/blue.png';
+import netflixLogo from '../images/fontbolt.png';
+import profilePic from '../images/Recruiter.png'; // <-- replace with your new file name
+
 
 const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const profileImage = location.state?.profileImage || blueImage;
+  const profileImage = location.state?.profileImage || profilePic;
+
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 80);

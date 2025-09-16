@@ -2,11 +2,26 @@ import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaLinux, FaGitAlt, FaGoogle, FaJava, FaJs } from 'react-icons/fa';
+import { SiRubyonrails, SiMongodb, SiTypescript, SiCocoapods, SiApachekafka, SiRedis, SiOpenai, SiApachecassandra, SiPostgresql, SiMicrosoftazure, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiGithubactions,  SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage, SiSwift, SiBootstrap, SiApple} from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
+  SiCocoapods: <SiCocoapods />,
+  FaLinux: <FaLinux />,
+  SiApachekafka: <SiApachekafka />,
+  SiOpenai: <SiOpenai />,
+  SiRedis: <SiRedis />,
+  SiApachecassandra: <SiApachecassandra />,
+  SiMongodb: <SiMongodb />,
+  FaGoogle: <FaGoogle />,
+  SiMicrosoftazure: <SiMicrosoftazure />,
+  SiGithubactions: <SiGithubactions />,
+  SiApple: <SiApple />,
+  SiBootstrap: <SiBootstrap />,
+  FaJs: <FaJs />,
+  SiHtml5: <SiHtml5 />,
+  SiSwift: <SiSwift />,
   SiRubyonrails: <SiRubyonrails />,
   FaNodeJs: <FaNodeJs />,
   SiSpringboot: <SiSpringboot />,

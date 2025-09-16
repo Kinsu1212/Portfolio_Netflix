@@ -4,10 +4,10 @@ import React from 'react';
 import './Reading.css';
 import atomicHabits from '../images/atomic_habits.jpg';
 import richDadPoorDad from '../images/rich_dad_poor_dad.jpg';
-import alchemist from '../images/alchemist.jpg';
+import TheHardThingAboutHardThings from '../images/HardThing.jpg';
 import eatThatFrog from '../images/eat_that_frog.jpg';
-import vijayanikiAidhuMetlu from '../images/vijayaniki_aidu_metlu.jpg';
-import venneloAdapilla from '../images/vennelo_adapilla.jpeg';
+import gita from '../images/gita.jpg';
+import amazon from '../images/amazon.jpg';
 
 const books = [
   {
@@ -23,10 +23,10 @@ const books = [
     description: "An eye-opener on wealth, assets, and financial literacy.",
   },
   {
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    imgSrc: alchemist,
-    description: "A magical journey of following one's dreams.",
+    title: "The Hard Things About hard Things",
+    author: "Ben Horowitz",
+    imgSrc: TheHardThingAboutHardThings,
+    description: "The analysis of the problems that confront leaders every day",
   },
   {
     title: "Eat That Frog",
@@ -35,23 +35,24 @@ const books = [
     description: "A motivational book on overcoming procrastination.",
   },
   {
-    title: "Vijayaniki Aidhu Metlu",
-    author: "Yandamoori Veerendranath",
-    imgSrc: vijayanikiAidhuMetlu,
-    description: "An inspirational Telugu book for personal growth.",
+    title: "Amazon Shareowner Letters",
+    author: "Jeffrey P. Bezos",
+    imgSrc: amazon,
+    description: "Lessons from a $2 Trillion Company.",
   },
   {
-    title: "Vennelo Adapilla",
-    author: "Yandamoori Veerendranath",
-    imgSrc: venneloAdapilla,
-    description: "A classic Telugu romantic novel that touches the heart.",
+    title: "Bhagvad Gita",
+    author: "Veda vyasa",
+    imgSrc: gita,
+    description: "An episode recorded in the Mahabharata, a Sanskrit epic poem of ancient India.",
   },
+  
 ];
 
 const Reading: React.FC = () => {
   return (
     <div className="reading-container">
-      <h2 className="reading-title">📚 Books That Shaped My Journey</h2>
+      <h2 className="reading-title">📚 Books That Shaped My Mindset</h2>
       <p className="reading-intro">These books have influenced my perspectives, motivation, and self-growth.</p>
       <div className="books-grid">
         {books.map((book, index) => (

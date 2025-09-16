@@ -7,9 +7,9 @@ const GET_CERTIFICATIONS = `
     allCertifications {
       title
       issuer
-      issuedDate
+      issueddate
       link
-      iconName
+      iconname
     }
   }
 `;

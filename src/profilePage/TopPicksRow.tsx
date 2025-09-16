@@ -2,7 +2,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TopPicksRow.css';
 import { FaPassport, FaCode, FaBriefcase, FaCertificate, FaHandsHelping, FaProjectDiagram, FaEnvelope, FaMusic, FaBook } from 'react-icons/fa';
-
+import workPermitImg from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/work_permit.png';
+import luffy from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/luffy.jpeg';
+import barney from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/barney.jpg';
+import bean from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/bean.jpg';
+import heist from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/heist.jpg';
+import contact from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/contact.png';
+import read from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/snoop.jpg';
 type ProfileType = 'recruiter' | 'developer' | 'stalker' | 'adventure';
 
 interface TopPicksRowProps {
@@ -11,35 +17,35 @@ interface TopPicksRowProps {
 
 const topPicksConfig = {
   recruiter: [
-    { title: "Work Permit", imgSrc: "https://picsum.photos/seed/workpermit/250/200", icon: <FaPassport />, route: "/work-permit" },
-    { title: "Skills", imgSrc: "https://picsum.photos/seed/skills/250/200", icon: <FaCode />, route: "/skills" },
-    { title: "Experience", imgSrc: "https://picsum.photos/seed/workexperience/250/200", icon: <FaBriefcase />, route: "/work-experience" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/certifications/250/200", icon: <FaCertificate />, route: "/certifications" },
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/recommendations/250/200", icon: <FaHandsHelping />, route: "/recommendations" },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/projects/250/200", icon: <FaProjectDiagram />, route: "/projects" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/contact/250/200", icon: <FaEnvelope />, route: "/contact-me" }
+    { title: "Work Permit", imgSrc: workPermitImg, icon: <FaPassport />, route: "/work-permit" },
+    { title: "Skills", imgSrc: luffy, icon: <FaCode />, route: "/skills" },
+    { title: "Experience", imgSrc: barney, icon: <FaBriefcase />, route: "/work-experience" },
+    { title: "Certifications", imgSrc: bean, icon: <FaCertificate />, route: "/certifications" },
+    //{ title: "Recommendations", imgSrc: "https://picsum.photos/seed/recommendations/250/200", icon: <FaHandsHelping />, route: "/recommendations" },
+    { title: "Projects", imgSrc: heist, icon: <FaProjectDiagram />, route: "/projects" },
+    { title: "Contact Me", imgSrc: contact, icon: <FaEnvelope />, route: "/contact-me" }
   ],
   developer: [
-    { title: "Skills", imgSrc: "https://picsum.photos/seed/coding/250/200", route: "/skills", icon: <FaCode /> },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/development/250/200", route: "/projects", icon: <FaProjectDiagram /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/badge/250/200", route: "/certifications", icon: <FaCertificate /> },
-    { title: "Experience", imgSrc: "https://picsum.photos/seed/work/250/200", route: "/work-experience", icon: <FaBriefcase /> },
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/connect/250/200", route: "/contact-me", icon: <FaEnvelope /> }
+    { title: "Skills", imgSrc: luffy, route: "/skills", icon: <FaCode /> },
+    { title: "Projects", imgSrc: heist, route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Certifications", imgSrc: bean, route: "/certifications", icon: <FaCertificate /> },
+    { title: "Experience", imgSrc: barney, route: "/work-experience", icon: <FaBriefcase /> },
+    //{ title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
+    { title: "Contact Me", imgSrc: contact, route: "/contact-me", icon: <FaEnvelope /> }
   ],
   stalker: [
-    { title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/call/250/200", route: "/contact-me", icon: <FaEnvelope /> },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/planning/250/200", route: "/projects", icon: <FaProjectDiagram /> },
-    { title: "Experience", imgSrc: "https://picsum.photos/seed/resume/250/200", route: "/work-experience", icon: <FaBriefcase /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/achievements/250/200", route: "/certifications", icon: <FaCertificate /> },
+    //{ title: "Recommendations", imgSrc: "https://picsum.photos/seed/networking/250/200", route: "/recommendations", icon: <FaHandsHelping /> },
+    { title: "Contact Me", imgSrc: contact, route: "/contact-me", icon: <FaEnvelope /> },
+    { title: "Projects", imgSrc: heist, route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Experience", imgSrc: barney, route: "/work-experience", icon: <FaBriefcase /> },
+    { title: "Certifications", imgSrc: bean, route: "/certifications", icon: <FaCertificate /> },
   ],
   adventure: [
-    { title: "Music", imgSrc: "https://picsum.photos/seed/music/250/200", route: "/music", icon: <FaMusic /> },
-    { title: "Projects", imgSrc: "https://picsum.photos/seed/innovation/250/200", route: "/projects", icon: <FaProjectDiagram /> },
-    { title: "Reading", imgSrc: "https://picsum.photos/seed/books/250/200", route: "/reading", icon: <FaBook /> },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/seed/connect/250/200", route: "/contact-me", icon: <FaEnvelope /> },
-    { title: "Certifications", imgSrc: "https://picsum.photos/seed/medal/250/200", route: "/certifications", icon: <FaCertificate /> }
+    //{ title: "Music", imgSrc: "https://picsum.photos/seed/music/250/200", route: "/music", icon: <FaMusic /> },
+    { title: "Projects", imgSrc: heist, route: "/projects", icon: <FaProjectDiagram /> },
+    { title: "Reading", imgSrc: read, route: "/reading", icon: <FaBook /> },
+    { title: "Contact Me", imgSrc: contact, route: "/contact-me", icon: <FaEnvelope /> },
+    { title: "Certifications", imgSrc: bean, route: "/certifications", icon: <FaCertificate /> }
   ]
 };
 

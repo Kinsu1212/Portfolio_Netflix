@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContinueWatching.css';
-
+import workPermitImg from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/work_permit.png';
+import luffy from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/luffy.jpeg';
+import barney from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/barney.jpg';
+import bean from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/bean.jpg';
+import heist from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/heist.jpg';
+import contact from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/contact.png';
+import read from '/Users/patelkinsu/Desktop/netflix_portfolio/src/images/snoop.jpg';
 type ProfileType = 'recruiter' | 'developer' | 'stalker' | 'adventure';
 
 interface ContinueWatchingProps {
@@ -10,28 +16,28 @@ interface ContinueWatchingProps {
 
 const continueWatchingConfig = {
   recruiter: [
-    { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    //{ title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
+    { title: "Reading", imgSrc: read, link: "/reading" },
+    // { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Contact Me", imgSrc: contact, link: "/contact-me" }
   ],
   developer: [
-    { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    //{ title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
+    { title: "Reading", imgSrc: read, link: "/reading" },
+    // { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Certifications", imgSrc: bean, link: "/certifications" },
+    { title: "Contact Me", imgSrc: contact, link: "/contact-me" }
   ],
   stalker: [
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    { title: "Reading", imgSrc: read, link: "/reading" },
+    // { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Contact Me", imgSrc: contact, link: "/contact-me" }
   ],
   adventure: [
-    { title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
-    { title: "Reading", imgSrc: "https://picsum.photos/id/1026/300/200", link: "/reading" },
-    { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
-    { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
+    //{ title: "Music", imgSrc: "https://picsum.photos/id/1025/300/200", link: "/music" },
+    { title: "Reading", imgSrc: read, link: "/reading" },
+    { title: "Certifications", imgSrc: bean, link: "/certifications" },
+    { title: "Contact Me", imgSrc: contact, link: "/contact-me" }
   ]
 };
 

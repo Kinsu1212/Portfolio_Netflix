@@ -4,22 +4,20 @@ import { ContactMe } from '../types';
 
 const GET_CONTACT_ME = `
   query {
-    contactMe {
-      profilePicture {
-        url
-      }
+    allContactmes {
+      profile
       name
       title
       summary
-      companyUniversity
-      linkedinLink
+      companyuniversity
+      linkedin
       email
-      phoneNumber
+      phonenumber
     }
   }
 `;
 
-export async function getContactMe(): Promise<ContactMe> {
-  const data = await datoCMSClient.request<{ contactMe: ContactMe }>(GET_CONTACT_ME);
-  return data.contactMe;
+export async function getContactMe(): Promise<ContactMe | null> {
+  const data = await datoCMSClient.request<{ allContactmes: ContactMe[] }>(GET_CONTACT_ME);
+  return data.allContactmes.length > 0 ? data.allContactmes[0] : null;
 }

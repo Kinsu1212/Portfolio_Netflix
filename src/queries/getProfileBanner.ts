@@ -9,9 +9,7 @@ const GET_PROFILE_BANNER = `
       url
     }
     headline
-    resumeLink {
-      url
-    }
+    resumeLink
     linkedinLink
     profileSummary
   }

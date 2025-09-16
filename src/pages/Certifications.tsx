@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Certifications.css';
 import { FaExternalLinkAlt, FaUniversity } from 'react-icons/fa';
-import { SiUdemy, SiCoursera, SiIeee } from 'react-icons/si';
+import { SiUdemy, SiAmazon, SiGooglecloud, SiCoursera, SiIeee } from 'react-icons/si';
 import { Certification } from '../types';
 import { getCertifications } from '../queries/getCertifications';
 const iconData: { [key: string]: JSX.Element } = {
+  'AWS': <SiAmazon />,
+  'GCP': <SiGooglecloud />,
   'udemy': <SiUdemy />,
   'coursera': <SiCoursera />,
   'ieee': <SiIeee />,
@@ -32,10 +34,10 @@ const Certifications: React.FC = () => {
         {certifications.map((cert, index) => (
           <a href={cert.link} key={index} target="_blank" rel="noopener noreferrer" className="certification-card" style={{ '--delay': `${index * 0.2}s` } as React.CSSProperties}>
             <div className="certification-content">
-              <div className="certification-icon">{iconData[cert.iconName] || <FaUniversity />}</div>
+              <div className="certification-icon">{iconData[cert.iconname] || <FaUniversity />}</div>
               <h3>{cert.title}</h3>
               <p>{cert.issuer}</p>
-              {cert.issuedDate && <span className="issued-date">Issued {cert.issuedDate}</span>}
+              {cert.issueddate && <span className="issued-date">Issued {cert.issueddate}</span>}
             </div>
             <div className="certification-link animated-icon">
               <FaExternalLinkAlt />

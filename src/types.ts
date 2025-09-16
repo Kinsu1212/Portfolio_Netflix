@@ -3,16 +3,14 @@
 export interface ProfileBanner {
   backgroundImage: { url: string };
   headline: string;
-  resumeLink: {
-    url: string;
-  };
+  resumeLink: string;
   linkedinLink: string;
   profileSummary: string;
 }
 
 export interface WorkPermit {
   visaStatus: string;
-  expiryDate: Date;
+  expiryDate: string;
   summary: string;
   additionalInfo: string;
 }
@@ -29,32 +27,31 @@ export interface TimelineItem {
 export interface Project {
   title: string;
   description: string;
-  techUsed: string;
+  technologies: string;
   image: { url: string };
 }
 
 export interface Certification {
   title: string;
   issuer: string;
-  issuedDate: string;
+  issueddate: string;
   link: string;
-  iconName: string;
+  iconname: string;
 }
 
 export interface ContactMe {
-  profilePicture: { url: string };
+  profile: string;
   name: string;
   title: string;
   summary: string;
-  companyUniversity: string;
-  linkedinLink: string;
+  companyuniversity: string;
+  linkedin: string;
   email: string;
-  phoneNumber: string;
+  phonenumber: string;
 }
-
 export interface Skill { 
   name: string;
   category: string;
   description: string;
-  icon: string;
+  icon: string
 }

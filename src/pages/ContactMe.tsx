@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 import { getContactMe } from '../queries/getContactMe';
@@ -12,7 +11,9 @@ const ContactMe: React.FC = () => {
   useEffect(() => {
     async function fetchUserData() {
       const data = await getContactMe();
-      setUserData(data);
+      if (data) {
+        setUserData(data);
+      }
     }
 
     fetchUserData();
@@ -23,16 +24,16 @@ const ContactMe: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="linkedin-badge-custom">
-        <img src={profilePic} alt="Sumanth Samala" className="badge-avatar" />
+        <img src={userData.profile} alt={userData.name} className="badge-avatar" />
         <div className="badge-content">
           <h3 className="badge-name">{userData?.name}</h3>
           <p className="badge-title">{userData.title}</p>
           <p className="badge-description">
             {userData.summary}
           </p>
-          <p className="badge-company">{userData.companyUniversity}</p>
+          <p className="badge-company">{userData.companyuniversity}</p>
           <a
-            href={userData.linkedinLink}
+            href={userData.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="badge-link"
@@ -53,8 +54,8 @@ const ContactMe: React.FC = () => {
         </div>
         <div className="contact-item">
           <FaPhoneAlt className="contact-icon" />
-          <a href={`tel:${userData.phoneNumber}`} className="contact-link">
-            {userData.phoneNumber}
+          <a href={`tel:${userData.phonenumber}`} className="contact-link">
+            {userData.phonenumber}
           </a>
         </div>
         <div className="contact-fun">
