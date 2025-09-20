@@ -58,7 +58,7 @@ npm start
 ```
 
 5. **Visit the Local Server**: Open your browser and navigate to the local server URL.
-   ![alt text](<img width="1477" height="759" alt="Screenshot 2025-09-19 at 9 01 06 PM" src="https://github.com/user-attachments/assets/3ae54ce9-3bb4-46db-af0a-c7d2b43e6552" />)
+   ![alt text]
 
 ---
 
@@ -76,6 +76,8 @@ npm start
 - 🔗 [LinkedIn](https://www.linkedin.com/in/kinsu-patel-371070217/)
 
 ---
+<img width="1477" height="759" alt="Screenshot 2025-09-19 at 9 01 06 PM" src="https://github.com/user-attachments/assets/3ae54ce9-3bb4-46db-af0a-c7d2b43e6552" />
+
 
 ## 📜 License
 
