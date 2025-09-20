@@ -19,16 +19,12 @@ Welcome to my personal portfolio project! 🚀 This website showcases my work, s
 This portfolio is built with love and:
 
 - ⚛️ **React** (Frontend)
-- ☁️ **AWS S3 & CloudFront** (Hosting and CDN)
+- 🌐 **Netlify** (Hosting)
 - 🖌️ **Tailwind CSS** (Styling)
 - 🛡️ **DatoCMS** (Content Management)
 - 🧩 **Other Cool Tools**: GitHub Actions
 
 ---
-
-## ⭐ Show Your Support
-
-If you find this project helpful or inspiring, give it a ⭐ on GitHub—it means the world to me! 🌟
 
 Happy coding! 💻✨
 
@@ -62,7 +58,7 @@ npm start
 ```
 
 5. **Visit the Local Server**: Open your browser and navigate to the local server URL.
-   ![alt text](image.png)
+   ![alt text](<img width="1477" height="759" alt="Screenshot 2025-09-19 at 9 01 06 PM" src="https://github.com/user-attachments/assets/3ae54ce9-3bb4-46db-af0a-c7d2b43e6552" />)
 
 ---
 
